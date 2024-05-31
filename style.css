@@ -195,7 +195,7 @@ header {
 
 .send-money-container .box h6 {
     font-family: sans-serif;
-    font-weight: lighter;
+    font-weight: 500;
 }
 
 /* The send money and withdraw money options ends */
@@ -250,7 +250,7 @@ header {
 
 .box-container .box h6 {
     font-family: sans-serif;
-    font-weight: lighter;
+    font-weight: 500;
 }
 
 .b-c-2 {
@@ -297,7 +297,7 @@ header {
 
 .referal-container a .claim-cash h6 {
     font-family: sans-serif;
-    font-weight: lighter;
+    font-weight: 500;
     color: var(--black-color);
 }
 

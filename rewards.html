@@ -28,6 +28,7 @@
             width: 100%;
             margin: auto;
             padding: 1px;
+            font-weight: 700;
         }
 
         header {
@@ -39,6 +40,7 @@
             flex-flow: column;
             border-bottom-left-radius: 15px;
             border-bottom-right-radius: 15px;
+            position: relative;
         }
 
         header .acc-bal {
@@ -154,17 +156,6 @@
             text-decoration: none;
         }
 
-        .transaction-list a .date-span {
-            display: flex;
-            gap: 10px;
-            font-size: 13px;
-            align-items: center;
-        }
-
-        .transaction-list .date .in-out span {
-            font-weight: lighter;
-        }
-
         .transaction a {
             display: flex;
             justify-content: 
@@ -180,13 +171,21 @@
             padding: 5px;
         }
 
-        .transaction .first-tran {
+        header .first-tran {
             position: absolute;
-            top: 15%;
+            top: 75%;
             width:95%;
             transform: translatex(-50%);
             left: 50%;
             padding: 2px 20px 0px 8px;
+            display: flex;
+            justify-content: 
+            space-between;
+            align-items: center;
+            padding: 5px 20px 10px 8px;
+            border-radius: 15px;
+            background: white;
+            margin-top: 10px;
         }
 
         .transaction .sec-tran {
@@ -194,9 +193,33 @@
         }
 
         .transaction .bonus {
-            margin-top: 30px;
+            margin-top: 50px;
             margin-left: 15px;
             font-weight: 500;
+        }
+
+        header .first-tran .transaction-details {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 5px;
+        }
+
+        header .first-tran .transaction-details .fa {
+            color: #12a963;
+            padding: 10px;
+        }
+
+        header .first-tran .transaction-details h6 {
+            display: flex;
+            flex-flow: column;
+            font-weight: lighter;
+            font-size: 10px;
+            line-height: 1.5;
+        }
+
+        header .first-tran .transaction-details h6 SPAN .fa {
+            font-size: 10px;
         }
 
         .transaction a .transaction-details {
@@ -329,24 +352,25 @@ footer ul li a span {
                 </div>
         </div>
 
+        <a class="first-tran" href= "transaction.html">
+            <div class="transaction-details">
+                <i class="fa fa-calendar-alt"></i>
+                <h6>
+                    Daily bonus
+                    <span>Get up to <i style="padding: 0; color: #696969;" class="fa fa-naira-sign"></i>100 bonus</span>
+                </h6>
+            </div>
+
+            <div class="transaction-amount">
+                <i class="fa fa-angle-right"></i>
+            </div>
+        </a>
+
         </header>
 
             <div class="transaction-list">
 
                 <div class="transaction">
-                    <a class="first-tran" href= "transaction.html">
-                        <div class="transaction-details">
-                            <i class="fa fa-calendar-alt"></i>
-                            <h6>
-                                Daily bonus
-                                <span>Get up to <i style="padding: 0; color: #696969;" class="fa fa-naira-sign"></i>100 bonus</span>
-                            </h6>
-                        </div>
-
-                        <div class="transaction-amount">
-                            <i class="fa fa-angle-right"></i>
-                        </div>
-                    </a>
 
                     <h4 class="bonus">Daily Bonus</h4>
 
