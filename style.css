@@ -313,18 +313,17 @@ header {
 footer {
     width: 100%;
     margin: auto;
-    position: absolute;
     bottom: 0;
     left: 0;
     padding-top: 170px;
     position: fixed;
-}
+    }
 
-footer ul {
+    footer ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    background: var(--white-bg);
+    background: white;
     margin: auto;
     padding: 12px 40px 12px 40px;
     border-radius: 10px;
